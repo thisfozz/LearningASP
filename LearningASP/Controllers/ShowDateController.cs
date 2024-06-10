@@ -10,6 +10,7 @@ public class ShowDateController : Controller
     {
         DateTime now = DateTime.Now;
         ViewBag.Message = now.DayOfYear;
+
         return View("CurrentDate");
     }
 }

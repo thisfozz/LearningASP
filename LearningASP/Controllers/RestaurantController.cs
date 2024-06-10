@@ -18,6 +18,7 @@ public class RestaurantController : Controller
             StartTime = new DateTime(DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day, 10, 0, 0),
             EndTime = new DateTime(DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day, 22, 0, 0)
         };
+
         return View("RestaurantInfo", restaurant);
     }
 }
