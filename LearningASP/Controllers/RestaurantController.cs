@@ -12,9 +12,11 @@ public class RestaurantController : Controller
         var restaurant = new Restaurant
         {
             Name = "PIANO BAR",
-            CuisineType = "Modern Russian and European cuisine with notes of Asia",
+            CuisineType = "PIANO – двухуровневое заведение современной русской и европейской кухни с нотками Азии в центре Тюмени на Пешеходной улице Дзержинского.",
             PhoneNumber = "+7 (3452) 55-55-75",
-            Address = "Republic, 33"
+            Address = "ул. Республики, 33",
+            StartTime = new DateTime(DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day, 10, 0, 0),
+            EndTime = new DateTime(DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day, 22, 0, 0)
         };
         return View("RestaurantInfo", restaurant);
     }

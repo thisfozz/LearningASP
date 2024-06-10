@@ -32,6 +32,10 @@
                             <th>Наш адрес:</th>
                             <td>@Model.Address</td>
                         </tr>
+                        <tr>
+                            <th>Время работы:</th>
+                            <td>Ежедневно с @Model.StartTime.Hour:@Model.StartTime.Minute@Model.StartTime.Minute - @Model.EndTime.Hour:@Model.EndTime.Minute@Model.EndTime.Minute</td>
+                        </tr>
                     </tbody>
                 </table>
             </div>
