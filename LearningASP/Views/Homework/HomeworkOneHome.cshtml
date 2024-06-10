@@ -15,12 +15,26 @@
             <header class="text-center mb-4">
                 <h1>Домашняя работа 1</h1>
             </header>
-            <div class="assignment-title col-md-8 text-start">
-                <a href="/ShowDate/CurrentDate" class="assignment-link">Посмотреть текущий день в году</a>
-            </div>
-            <div class="assignment-title col-md-10 text-start">
-                <a href="/Alphabet/RandomAlphabetDispay" class="assignment-link">Показать случайную букву из алфавита</a>
-            </div>
+            <a href="@Url.Action("CurrentDateInYear", "ShowDate", new { area = "Homework" })" class="assignment-link">
+                <div class="assignment-title col-md-8 text-start">
+                    Посмотреть текущий день в году
+                </div>
+            </a>
+            <a href="@Url.Action("RandomAlphabetOnDisplay", "Alphabet", new { area = "Homework" })" class="assignment-link">
+                <div class="assignment-title col-md-8 text-start">
+                Показать случайную букву из алфавита
+                </div>
+            </a>
+            <a href="@Url.Action("RestaurantInfoOnTr", "RestaurantInfo", new { area = "Homework" })" class="assignment-link">
+                <div class="assignment-title col-md-8 text-start">
+                    Показать информацию о ресторане
+                </div>
+            </a>
+            <a href="@Url.Action("CountryDisplayInfoOnTr", "Country", new { area = "Homework" })" class="assignment-link">
+                <div class="assignment-title col-md-8 text-start">
+                    Показать информацию о странах
+                </div>
+            </a>
         </div>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     </body>

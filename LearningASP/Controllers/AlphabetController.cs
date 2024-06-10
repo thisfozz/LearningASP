@@ -5,7 +5,7 @@ namespace LearningASP.Controllers;
 public class AlphabetController : Controller
 {
     [HttpGet]
-    [Route("Alphabet/RandomAlphabetDispay")]
+    [Route("/Homework/HomeWorkOne/RandomAlphabetDispay")]
     public IActionResult RandomAlphabetOnDisplay(int? userInput)
     {
         if (userInput.HasValue)

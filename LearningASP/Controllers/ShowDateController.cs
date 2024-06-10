@@ -5,7 +5,7 @@ namespace LearningASP.Controllers;
 public class ShowDateController : Controller
 {
     [HttpGet]
-    [Route("ShowDate/CurrentDate")]
+    [Route("Homework/HomeWorkOne/CurrentDate")]
     public IActionResult CurrentDateInYear()
     {
         DateTime now = DateTime.Now;
