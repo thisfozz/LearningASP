@@ -1,11 +1,43 @@
-﻿<!DOCTYPE html>
-<html lang="en">
+﻿@model List<LearningASP.Models.Country>
+
+<!DOCTYPE html>
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Страны</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 </head>
-<body>
-    В разработке
-</body>
+    <body>
+        <div class="row">
+            <div class="container">
+                <h1 class="text-center mb-4">Информация о странах</h1>
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th>Наименование</th>
+                            <th>Полное наименование</th>
+                            <th>На английском</th>
+                            <th>Alpha2</th>
+                            <th>Alpha3</th>
+                            <th>ISO</th>
+                            <th>Расположение</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var country in Model)
+                        {
+                            <tr>
+                                <td>@country.Name</td>
+                                <td>@country.FullName</td>
+                                <td>@country.NameInEnglish</td>
+                                <td>@country.Alpha2</td>
+                                <td>@country.Alpha3</td>
+                                <td>@country.ISO</td>
+                                <td>@country.Location</td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </body>
 </html>
