@@ -8,7 +8,7 @@ public class CountryController : Controller
 
     [HttpGet]
     [Route("/Homework/HomeWorkOne/CountryDisplayInfo")]
-    public IActionResult CountryDisplayInfoOnTr()
+    public IActionResult CountryDisplayInfo()
     {
         var countries = new List<Country>
         {
